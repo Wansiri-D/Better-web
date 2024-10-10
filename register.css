@@ -1,0 +1,48 @@
+body {
+	background-color: rgb(189, 189, 242);
+	color: rgb(9, 13, 43);
+	font-size: 125%;
+}
+
+form {
+	border: 1px solid white;
+	padding: 1em;
+	margin-bottom: 2rem;
+}
+button {
+	font-size: 1.25rem;
+	padding: 0.3em 0.6em;
+}
+button:hover {
+	cursor: pointer;
+	background-color: rgb(185, 185, 245);
+}
+input {
+	font-size: 1.25rem;
+}
+label {
+	font-weight: bold;
+}
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+}
+input {
+	max-width: 30em;
+}
+input[type="checkbox"], input[type="radio"] {
+	width: 1em;
+	height: 1em;
+}
+
+input:valid {
+	background-color: rgb(205, 239, 205);
+}
+input:invalid {
+	background-color: rgb(217, 164, 164);
+}
+input:optional {
+	background-color: rgb(240, 213, 161);
+}
+/* Avancerat tips: kombinera med ::before eller ::after */

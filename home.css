@@ -73,7 +73,7 @@ header {
 .teams-items {
     border: 1px solid red;
     padding: 2rem;
-    background: #339cff;
+    background: #a8ba6b;
     color: #fff;
     text-align: center;
 }
@@ -96,4 +96,9 @@ footer {
     padding: 1rem;
     text-align: left;
     color: #fff;
+}
+
+a {
+    border-radius: 5px;
+    box-shadow: rgba(213, 91, 91, 0.24) 0px 3px 8px;
 }

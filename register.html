@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Register </title>
+	<link rel="stylesheet" href="register.css">
+</head>
+
+<section class="navbar">
+    <div class="logo">
+        <h1>Logo</h1>
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+</section>
+
+<body>
+	<h1> HTML formulär </h1>
+
+	<form action="#">
+		<p>
+			Detta är ett formulär! Klicka för att spara/skicka/logga in...
+		</p>
+
+		<p class="form-field">
+			<label for="fav-animal"> Ditt favoritdjur </label>
+			<input id="fav-animal" type="text" value="Tvättbjörn" required />
+		</p>
+		<p class="form-field">
+			<label for="fav-course"> Bästa kursen i utbildningen? </label>
+			<input id="fav-course" type="text" value="" placeholder="HTML och CSS" required minlength="4" />
+		</p>
+		<p class="form-field">
+			<label for="most-course"> Mesta kursen i utbildningen? </label>
+			<input id="most-course" type="text" value="" placeholder="HTML och CSS" />
+		</p>
+		<p>
+			<button type="button"> Normal button! </button>
+			<button type="reset"> Reset! </button>
+		</p>
+		<a href="#"> Länk </a>
+		<p class="form-field">
+			<input type="password" />
+		</p>
+		<p class="form-field">
+			<label>
+				Hur stora skor har du?
+			</label>
+			<input type="number" value="35" min="1" />
+		</p>
+		<p class="form-field">
+			<label>
+				<input type="checkbox" checked />
+				Jag vill ha extra majonnäs
+			</label>
+			<div>
+				<input id="extra-gurka" type="checkbox" />
+				<label for="extra-gurka"> Jag vill ha extra gurka </label>
+			</div>
+		</p>
+		<div class="form-field">
+			<p> Vilken sorts bröd vill du ha? </p>
+
+			<label>
+				<input type="radio" name="bread" /> Fullkorn
+			</label>
+			<label>
+				<input type="radio" name="bread" /> Tortilla
+			</label>
+			<label>
+				<input type="radio" name="bread" /> Knäckebröd
+			</label>
+			<!-- <label>
+				<input type="radio" name="salad" /> Sallad
+			</label> -->
+		</div>
+		<p>
+			<button type="submit"> Skicka formuläret <strong>NU</strong>! </button>
+			<input type="submit" value="Skicka formuläret <strong>NU</strong>!" />
+			<button type="button" disabled> Jag går inte att klicka på </button>
+		</p>
+	</form>
+
+	<input type="submit" value="Jag är utanför!" />
+
+</body>
+
+<footer>
+    <div class="main-footer-container">
+        <div class="contact-container">
+            <div>
+                <h3>Contact info</h3>
+                <p>&copy; 2024 Better Web Conference</p>
+                <p>Telephone: 012-345-678</p>
+                <p>Email: info@betterwebconf.com</p>
+            </div>
+        </div>
+        <div class="socials-container">
+            <img class="fb" src="#"></img>
+            <img class="insta" src="#"></img>
+        </div>
+    </div>
+</footer>
+</html>
