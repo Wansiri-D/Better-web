@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('img/conference1.jpg');
 }
 
 .navbar {
@@ -46,6 +47,7 @@ header {
 }
 
 .header-info {
+    margin: auto;
     text-align: center;
     width: 650px;
     height: 250px;
@@ -73,9 +75,10 @@ header {
 .teams-items {
     border: 1px solid red;
     padding: 2rem;
-    background: #a8ba6b;
+    background: black;
     color: #fff;
     text-align: center;
+    opacity: 0.7;
 }
 
 .teams-items img {
@@ -101,4 +104,8 @@ footer {
 a {
     border-radius: 5px;
     box-shadow: rgba(213, 91, 91, 0.24) 0px 3px 8px;
+}
+
+body {
+
 }
