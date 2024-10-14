@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Better Web </title>
-    <link rel="stylesheet" href="home.css"> 
+    <title>About Better Web Conference</title>
+    <link rel="stylesheet" href="about.css">
 </head>
-
-<section class="navbar">
-    <div class="logo">
-        <h1>Logo</h1>
-    </div>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="register.html">Register</a></li>
-    </ul>
-</section>
-
 <body>
-    <h1>About the Conference</h1>
-    <p>
-        The Better Web conference is an annual event where front-end developers 
-        come together to learn the latest trends and technologies.
-    </p>
-</body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Better Web</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
 
-<footer>
-    <div class="main-footer-container">
-        <div class="contact-container">
-            <div>
-                <h3>Contact info</h3>
-                <p>&copy; 2024 Better Web Conference</p>
-                <p>Telephone: 012-345-678</p>
-                <p>Email: info@betterwebconf.com</p>
+    <!-- About Section -->
+    <section class="about-section">
+        <h1>About the Better Web Conference</h1>
+        <p>The Better Web Conference is a premier event for frontend developers, bringing together industry leaders, innovators, and professionals. Whether you're looking to deepen your skills, network with peers, or stay ahead of emerging trends, this conference provides the platform to achieve your goals.</p>
+        <p>Held annually in Gothenburg, this year's conference runs from October 18th to October 20th, featuring 10 insightful seminars spread across three days. With topics ranging from CSS scalability to JavaScript advancements, there's something for everyone.</p>
+
+        <h2>Why Attend?</h2>
+        <ul>
+            <li><strong>Cutting-Edge Content:</strong> Discover the latest in frontend technologies, including web components, React, and cloud deployment strategies.</li>
+            <li><strong>Hands-On Workshops:</strong> Participate in interactive workshops to get practical experience with the tools and techniques covered in the seminars.</li>
+            <li><strong>Networking Opportunities:</strong> Connect with like-minded developers, potential collaborators, and industry veterans during breaks and dedicated networking sessions.</li>
+            <li><strong>Flexible Attendance:</strong> Choose between full conference passes or single-day tickets to suit your schedule.</li>
+        </ul>
+
+        <h2>Keynote Speakers</h2>
+        <p>Meet some of the industry's top voices who will deliver engaging talks and interactive sessions:</p>
+        <ul>
+            <li><strong>Alice Johnson:</strong> Lead Developer at TechHub, with 10+ years in frontend engineering.</li>
+            <li><strong>David Svensson:</strong> Head of Web Development at CloudWave, focusing on performance optimization and security.</li>
+            <li><strong>Sara Lindgren:</strong> Accessibility Specialist, known for her innovative approaches to inclusive web design.</li>
+        </ul>
+
+        <h2>Location</h2>
+        <p>The conference takes place at the Gothenburg Convention Center, offering state-of-the-art facilities, comfortable seating, and easy access to local hotels and restaurants. You'll also enjoy a well-catered lunch each day, with vegetarian, meat, and fish options, and accommodation for any dietary restrictions.</p>
+
+        <a href="registration.html" class="cta-button">Register Now</a>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer-container">
+            <div class="contact-container">
+                <div>
+                    <h3>Contact info</h3>
+                    <p>&copy; 2024 Better Web Conference</p>
+                    <p>Telephone: 012-345-678</p>
+                    <p>Email: info@betterwebconf.com</p>
+                </div>
+            </div>
+            <div class="socials-container">
+                <img class="fb" src="#"></img>
+                <img class="insta" src="#"></img>
             </div>
         </div>
-        <div class="socials-container">
-            <img class="fb" src="#"></img>
-            <img class="insta" src="#"></img>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+</body>
 </html>

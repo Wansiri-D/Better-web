@@ -1,109 +1,147 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Register </title>
-	<link rel="stylesheet" href="register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Web Conference</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="script.js" defer></script>
 </head>
-
-<section class="navbar">
-    <div class="logo">
-        <h1>Logo</h1>
-    </div>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="register.html">Register</a></li>
-    </ul>
-</section>
-
 <body>
-	<h1> HTML formulär </h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Better Web</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#registration">Register</a></li>
+        </ul>
+    </nav>
 
-	<form action="#">
-		<p>
-			Detta är ett formulär! Klicka för att spara/skicka/logga in...
-		</p>
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section">
+        <h2>Conference Schedule</h2>
 
-		<p class="form-field">
-			<label for="fav-animal"> Ditt favoritdjur </label>
-			<input id="fav-animal" type="text" value="Tvättbjörn" required />
-		</p>
-		<p class="form-field">
-			<label for="fav-course"> Bästa kursen i utbildningen? </label>
-			<input id="fav-course" type="text" value="" placeholder="HTML och CSS" required minlength="4" />
-		</p>
-		<p class="form-field">
-			<label for="most-course"> Mesta kursen i utbildningen? </label>
-			<input id="most-course" type="text" value="" placeholder="HTML och CSS" />
-		</p>
-		<p>
-			<button type="button"> Normal button! </button>
-			<button type="reset"> Reset! </button>
-		</p>
-		<a href="#"> Länk </a>
-		<p class="form-field">
-			<input type="password" />
-		</p>
-		<p class="form-field">
-			<label>
-				Hur stora skor har du?
-			</label>
-			<input type="number" value="35" min="1" />
-		</p>
-		<p class="form-field">
-			<label>
-				<input type="checkbox" checked />
-				Jag vill ha extra majonnäs
-			</label>
-			<div>
-				<input id="extra-gurka" type="checkbox" />
-				<label for="extra-gurka"> Jag vill ha extra gurka </label>
-			</div>
-		</p>
-		<div class="form-field">
-			<p> Vilken sorts bröd vill du ha? </p>
+        <!-- Day 1 -->
+        <div class="schedule-day">
+            <h3>Day 1 - 18th October</h3>
+            <ul>
+                <li>09:00 - 10:30: <strong>Welcome Keynote</strong> - The Future of Frontend Development</li>
+                <li>11:00 - 12:30: <strong>CSS for Large Projects</strong> - Best practices for scaling CSS</li>
+                <li>13:30 - 15:00: <strong>Performance Optimization</strong> - Improving load times and interactivity</li>
+            </ul>
+        </div>
 
-			<label>
-				<input type="radio" name="bread" /> Fullkorn
-			</label>
-			<label>
-				<input type="radio" name="bread" /> Tortilla
-			</label>
-			<label>
-				<input type="radio" name="bread" /> Knäckebröd
-			</label>
-			<!-- <label>
-				<input type="radio" name="salad" /> Sallad
-			</label> -->
-		</div>
-		<p>
-			<button type="submit"> Skicka formuläret <strong>NU</strong>! </button>
-			<input type="submit" value="Skicka formuläret <strong>NU</strong>!" />
-			<button type="button" disabled> Jag går inte att klicka på </button>
-		</p>
-	</form>
+        <!-- Day 2 -->
+        <div class="schedule-day">
+            <h3>Day 2 - 19th October</h3>
+            <ul>
+                <li>09:00 - 10:30: <strong>Advanced JavaScript</strong> - New features in ES2023</li>
+                <li>11:00 - 12:30: <strong>Web Accessibility</strong> - Ensuring inclusivity in web applications</li>
+                <li>13:30 - 15:00: <strong>Front-End Security</strong> - Protecting your applications</li>
+                <li>15:30 - 17:00: <strong>Interactive UIs with React</strong> - Building user interfaces with React.js</li>
+            </ul>
+        </div>
 
-	<input type="submit" value="Jag är utanför!" />
+        <!-- Day 3 -->
+        <div class="schedule-day">
+            <h3>Day 3 - 20th October</h3>
+            <ul>
+                <li>09:00 - 10:30: <strong>Intro to Web Components</strong> - Encapsulating and reusing HTML elements</li>
+                <li>11:00 - 12:30: <strong>API Design</strong> - Best practices for designing RESTful APIs</li>
+                <li>13:30 - 15:00: <strong>Deploying to the Cloud</strong> - Best tools for modern web development deployment</li>
+            </ul>
+        </div>
+    </section>
 
-</body>
+    <!-- Registration Section -->
+    <section id="registration" class="registration-section">
+        <h2>Register for the Conference</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-<footer>
-    <div class="main-footer-container">
-        <div class="contact-container">
-            <div>
-                <h3>Contact info</h3>
-                <p>&copy; 2024 Better Web Conference</p>
-                <p>Telephone: 012-345-678</p>
-                <p>Email: info@betterwebconf.com</p>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="days">Select Days</label>
+            <select id="days" name="days" onchange="showDaySelection()" required>
+                <option value="1">Day 1 Only (18 Oct)</option>
+                <option value="2">Day 2 Only (19 Oct)</option>
+                <option value="3">Day 3 Only (20 Oct)</option>
+                <option value="2days">2 Days Pass</option>
+                <option value="full">Full Conference (18-20 Oct)</option>
+            </select>
+
+            <!-- 2-day pass day selection (hidden by default) -->
+            <div id="two-days-selection" style="display:none;">
+                <h3>Select Two Days:</h3>
+                <label>
+                    <input type="checkbox" id="2day1" value="day1" onchange="limitTwoDays()"> Day 1 (18 Oct)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="2day2" value="day2" onchange="limitTwoDays()"> Day 2 (19 Oct)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="2day3" value="day3" onchange="limitTwoDays()"> Day 3 (20 Oct)
+                </label>
+            </div>
+
+            <label for="meal">Meal Preference</label>
+            <select id="meal" name="meal" required>
+                <option value="meat">Meat</option>
+                <option value="fish">Fish</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
+
+            <label for="allergies">Allergies (optional)</label>
+            <textarea id="allergies" name="allergies" rows="3" placeholder="List any allergies here..."></textarea>
+
+            <!-- Ticket Pricing Section -->
+            <h3>Ticket Selection</h3>
+            <p>Select how many days you want to attend:</p>
+            <label>
+                <input type="checkbox" name="day1" value="150" onclick="calculateTotal()"> Day 1 - 150 SEK
+            </label><br>
+            <label>
+                <input type="checkbox" name="day2" value="150" onclick="calculateTotal()"> Day 2 - 150 SEK
+            </label><br>
+            <label>
+                <input type="checkbox" name="day3" value="150" onclick="calculateTotal()"> Day 3 - 150 SEK
+            </label><br>
+            <label>
+                <input type="checkbox" name="2days" value="275" onclick="calculateTotal()"> 2 Days Pass - 275 SEK
+            </label><br>
+            <label>
+                <input type="checkbox" name="full" value="400" onclick="calculateTotal()"> Full Conference - 400 SEK
+            </label>
+
+            <p id="total-cost">Total Cost: 0 SEK</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer-container">
+            <div class="contact-container">
+                <div>
+                    <h3>Contact info</h3>
+                    <p>&copy; 2024 Better Web Conference</p>
+                    <p>Telephone: 012-345-678</p>
+                    <p>Email: info@betterwebconf.com</p>
+                </div>
+            </div>
+            <div class="socials-container">
+                <img class="fb" src="#"></img>
+                <img class="insta" src="#"></img>
             </div>
         </div>
-        <div class="socials-container">
-            <img class="fb" src="#"></img>
-            <img class="insta" src="#"></img>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+</body>
 </html>

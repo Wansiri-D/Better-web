@@ -1,48 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-	background-color: rgb(189, 189, 242);
-	color: rgb(9, 13, 43);
-	font-size: 125%;
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
 
-form {
-	border: 1px solid white;
-	padding: 1em;
-	margin-bottom: 2rem;
-}
-button {
-	font-size: 1.25rem;
-	padding: 0.3em 0.6em;
-}
-button:hover {
-	cursor: pointer;
-	background-color: rgb(185, 185, 245);
-}
-input {
-	font-size: 1.25rem;
-}
-label {
-	font-weight: bold;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.form-field {
-	display: flex;
-	flex-direction: column;
-}
-input {
-	max-width: 30em;
-}
-input[type="checkbox"], input[type="radio"] {
-	width: 1em;
-	height: 1em;
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
 }
 
-input:valid {
-	background-color: rgb(205, 239, 205);
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-bottom: 3px solid #e67e22;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
-input:invalid {
-	background-color: rgb(217, 164, 164);
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
 }
-input:optional {
-	background-color: rgb(240, 213, 161);
+
+.nav-links {
+    list-style: none;
+    display: flex;
 }
-/* Avancerat tips: kombinera med ::before eller ::after */
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    padding: 10px 15px;
+    color: #f5f5f5;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+/* Schedule Section */
+.schedule-section {
+    background-color: #333;
+    padding: 60px 20px;
+}
+
+.schedule-day {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.schedule-day h3 {
+    font-size: 24px;
+    color: #e67e22;
+    text-align: center;
+}
+
+.schedule-day ul {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-day ul li {
+
+.registration-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    color: #f5f5f5;
+}
+
+.registration-section form input,
+.registration-section form select,
+.registration-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #e67e22;
+    background-color: #333;
+    color: #fff;
+}
+
+.registration-section form label {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.registration-section form button {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-section form button:hover {
+    background-color: #d35400;
+}
+
+/* Ticket pricing */
+.total-cost {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e67e22
+}
+footer {
+	background: #2c2c2c;
+	padding: 1rem;
+	text-align: left;
+	border-top: 3px solid #e67e22;
+	color: #fff;
+}
+	

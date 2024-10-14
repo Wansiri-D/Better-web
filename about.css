@@ -1,0 +1,104 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+h1, h2 {
+    color: #f47c24;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    border-bottom: 3px solid #e67e22;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f47c24;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.navbar .nav-links a.active {
+    color: #f47c24;
+    font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-section h1, .about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: square;
+    margin-bottom: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #f47c24;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e66a1f;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer {
+    background: #2c2c2c;
+    padding: 1rem;
+    text-align: left;
+    border-top: 3px solid #e67e22;
+    color: #fff;
+}
