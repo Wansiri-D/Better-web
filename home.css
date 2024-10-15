@@ -66,25 +66,25 @@ h2 {
     color: #fff;
 }
 
-.hero {
+.welcome {
     background-color: #2e2e2e;
     color: #fff;
     padding: 100px 20px;
     text-align: center;
 }
 
-.hero-content h1{
+.welcome-content h1{
     font-size: 48px;
     margin-bottom: 20px;
     color: #e67e22;
 }
 
-.hero-content p {
+.welcome-content p {
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-.hero-button {
+.welcome-button {
     background-color: #e67e22;
     color: #fff;
     padding: 12px 25px;
@@ -95,7 +95,7 @@ h2 {
     transition: background-color 0.3s;
 }
 
-.hero-button hover {
+.welcome-button hover {
     background-color: #d35400;
 }
 
