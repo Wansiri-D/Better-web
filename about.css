@@ -1,14 +1,27 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #2e2e2e;
-    color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-h1, h2 {
-    color: #f47c24;
+body {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
 }
 
 /* Navbar */
@@ -16,34 +29,41 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1c1c1c;
+    padding: 20px;
+    background-color: #2c2c2c;
     border-bottom: 3px solid #e67e22;
-    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
+.logo {
+    font-size: 24px;
     font-weight: bold;
-    color: #f47c24;
+    color: #e67e22;
 }
 
-.navbar .nav-links {
+.nav-links {
     list-style: none;
+    display: flex;
 }
 
-.navbar .nav-links li {
-    display: inline;
+.nav-links li {
     margin-left: 20px;
 }
 
-.navbar .nav-links a {
-    text-decoration: none;
-    color: #f0f0f0;
+.nav-links a {
+    padding: 10px 15px;
+    color: #f5f5f5;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
 }
 
-.navbar .nav-links a.active {
-    color: #f47c24;
-    font-weight: bold;
+.nav-links a:hover {
+    background-color: #e67e22;
+    color: #fff;
 }
 
 /* About Section */

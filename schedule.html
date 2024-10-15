@@ -3,44 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Better Web </title>
-    <link rel="stylesheet" href="home.css"> 
+    <title>Conference Schedule</title>
+    <link rel="stylesheet" href="schedule.css">
 </head>
-
-<section class="navbar">
-    <div class="logo">
-        <h1>Logo</h1>
-    </div>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="register.html">Register</a></li>
-    </ul>
-</section>
-
 <body>
-    <h1>About the Conference</h1>
-    <p>
-        The Better Web conference is an annual event where front-end developers 
-        come together to learn the latest trends and technologies.
-    </p>
-</body>
 
-<footer>
-    <div class="main-footer-container">
-        <div class="contact-container">
-            <div>
-                <h3>Contact info</h3>
-                <p>&copy; 2024 Better Web Conference</p>
-                <p>Telephone: 012-345-678</p>
-                <p>Email: info@betterwebconf.com</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Better Web</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="schedule">
+            <h1>Conference Schedule</h1>
+
+            <!-- Day 1 Schedule -->
+            <div class="day">
+                <h2>Day 1: October 18, 2024</h2>
+                <p>Welcome and keynote speakers, hands-on workshops, networking sessions.</p>
+                <ul>
+                    <li><strong>09:00 - 10:00</strong> - Opening Keynote</li>
+                    <li><strong>10:15 - 12:00</strong> - Workshop: Modern Web Development</li>
+                    <li><strong>12:00 - 13:00</strong> - <em>Lunch</em></li>
+                    <li><strong>13:30 - 15:30</strong> - Seminar: JavaScript Best Practices</li>
+                    <li><strong>16:00 - 17:30</strong> - Networking Session</li>
+                </ul>
+
+                <!-- Meal Plan for Day 1 -->
+                <div class="meal-plan">
+                    <h3>Meal Plan - Day 1</h3>
+                    <ul>
+                        <li>Meat Option: Grilled Chicken with Vegetables</li>
+                        <li>Fish Option: Salmon with Lemon Sauce</li>
+                        <li>Vegetarian Option: Stir-fried Tofu with Rice</li>
+                        <li>Allergies: Gluten-free and Dairy-free options available</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Repeat the schedule for other days... -->
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer-container">
+            <div class="contact-container">
+                <div>
+                    <h3>Contact info</h3>
+                    <p>&copy; 2024 Better Web Conference</p>
+                    <p>Telephone: 012-345-678</p>
+                    <p>Email: info@betterwebconf.com</p>
+                </div>
+            </div>
+            <div class="socials-container">
+                <img class="fb" src="#"></img>
+                <img class="insta" src="#"></img>
             </div>
         </div>
-        <div class="socials-container">
-            <img class="fb" src="#"></img>
-            <img class="insta" src="#"></img>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+</body>
 </html>
