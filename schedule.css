@@ -82,6 +82,7 @@ main {
 }
 
 .schedule h1 {
+    font-size: 36px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -96,6 +97,10 @@ main {
 .day h2 {
     color: #f77e42; /* Orange color for headings */
     margin-bottom: 10px;
+}
+
+.day p{
+    font-size: 20px;
 }
 
 .day p, .day ul li {
