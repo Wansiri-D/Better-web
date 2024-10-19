@@ -154,7 +154,6 @@ h2 {
 }
 
 /* Speakers Section */
-/* Speakers Section */
 .speakers {
     padding: 50px 20px;
     background-color: #1e1e1e;
@@ -205,6 +204,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
+    border-top: 3px solid #e67e22;
 }
 
 .main-footer-container {
@@ -233,4 +233,3 @@ footer {
     height: 50px;
     margin: 1em;
 }
-

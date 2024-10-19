@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Better Web Conference</title>
+    <title>Register - Better Web Conference 2024</title>
     <link rel="stylesheet" href="register.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -19,127 +18,68 @@
         </ul>
     </nav>
 
-    <!-- Schedule Section -->
-    <section id="schedule" class="schedule-section">
-        <h2>Conference Schedule</h2>
-
-        <!-- Day 1 -->
-        <div class="schedule-day">
-            <h3>Day 1 - 18th October</h3>
-            <ul>
-                <li>09:00 - 10:30: <strong>Welcome Keynote</strong> - The Future of Frontend Development</li>
-                <li>11:00 - 12:30: <strong>CSS for Large Projects</strong> - Best practices for scaling CSS</li>
-                <li>13:30 - 15:00: <strong>Performance Optimization</strong> - Improving load times and interactivity</li>
-            </ul>
-        </div>
-
-        <!-- Day 2 -->
-        <div class="schedule-day">
-            <h3>Day 2 - 19th October</h3>
-            <ul>
-                <li>09:00 - 10:30: <strong>Advanced JavaScript</strong> - New features in ES2023</li>
-                <li>11:00 - 12:30: <strong>Web Accessibility</strong> - Ensuring inclusivity in web applications</li>
-                <li>13:30 - 15:00: <strong>Front-End Security</strong> - Protecting your applications</li>
-                <li>15:30 - 17:00: <strong>Interactive UIs with React</strong> - Building user interfaces with React.js</li>
-            </ul>
-        </div>
-
-        <!-- Day 3 -->
-        <div class="schedule-day">
-            <h3>Day 3 - 20th October</h3>
-            <ul>
-                <li>09:00 - 10:30: <strong>Intro to Web Components</strong> - Encapsulating and reusing HTML elements</li>
-                <li>11:00 - 12:30: <strong>API Design</strong> - Best practices for designing RESTful APIs</li>
-                <li>13:30 - 15:00: <strong>Deploying to the Cloud</strong> - Best tools for modern web development deployment</li>
-            </ul>
-        </div>
-    </section>
-
     <!-- Registration Section -->
-    <section id="registration" class="registration-section">
+    <section id="register">
         <h2>Register for the Conference</h2>
-        <form action="#" method="POST">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required><br>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required><br>
+        <!-- Registration Form -->
+        <form id="register-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" required><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
 
-            <label for="days">Select Days</label>
-            <select id="days" name="days" onchange="showDaySelection()" required>
-                <option value="1">Day 1 Only (18 Oct)</option>
-                <option value="2">Day 2 Only (19 Oct)</option>
-                <option value="3">Day 3 Only (20 Oct)</option>
-                <option value="2days">2 Days Pass</option>
-                <option value="full">Full Conference (18-20 Oct)</option>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Choose Days to Attend -->
+            <label for="days">Choose days to attend:</label>
+            <select id="days" name="days" required>
+                <option value="day1">Day 1 - 18/10</option>
+                <option value="day2">Day 2 - 19/10</option>
+                <option value="day3">Day 3 - 20/10</option>
+                <option value="full">Full Conference (All Days)</option>
+                <option value="2days">Choose 2 days</option>
             </select>
 
-            <!-- 2-day pass day selection (hidden by default) -->
-            <div id="two-days-selection" style="display:none;">
-                <h3>Select Two Days:</h3>
-                <label>
-                    <input type="checkbox" id="2day1" value="day1" onchange="limitTwoDays()"> Day 1 (18 Oct)
-                </label><br>
-                <label>
-                    <input type="checkbox" id="2day2" value="day2" onchange="limitTwoDays()"> Day 2 (19 Oct)
-                </label><br>
-                <label>
-                    <input type="checkbox" id="2day3" value="day3" onchange="limitTwoDays()"> Day 3 (20 Oct)
-                </label>
-            </div>
+            <!-- Ticket Selection -->
+            <label for="ticket">Select Ticket Type:</label>
+            <select id="ticket" name="ticket" required>
+                <option value="day-pass">Day Pass - 500 SEK</option>
+                <option value="two-day-pass">2 Day Pass - 900 SEK</option>
+                <option value="full-pass">Full Conference Pass (3 Days) - 1200 SEK</option>
+            </select>
 
-            <label for="meal">Meal Preference</label>
+            <!-- Meal Preferences -->
+            <label for="meal">Meal Preference:</label>
             <select id="meal" name="meal" required>
                 <option value="meat">Meat</option>
                 <option value="fish">Fish</option>
                 <option value="vegetarian">Vegetarian</option>
             </select>
 
-            <label for="allergies">Allergies (optional)</label>
-            <textarea id="allergies" name="allergies" rows="3" placeholder="List any allergies here..."></textarea>
+            <label for="allergies">Any Allergies (Optional):</label>
+            <input type="text" id="allergies" name="allergies">
 
-            <!-- Ticket Pricing Section -->
-            <h3>Ticket Selection</h3>
-            <p>Select how many days you want to attend:</p>
-            <label>
-                <input type="checkbox" name="day1" value="150" onclick="calculateTotal()"> Day 1 - 150 SEK
-            </label><br>
-            <label>
-                <input type="checkbox" name="day2" value="150" onclick="calculateTotal()"> Day 2 - 150 SEK
-            </label><br>
-            <label>
-                <input type="checkbox" name="day3" value="150" onclick="calculateTotal()"> Day 3 - 150 SEK
-            </label><br>
-            <label>
-                <input type="checkbox" name="2days" value="275" onclick="calculateTotal()"> 2 Days Pass - 275 SEK
-            </label><br>
-            <label>
-                <input type="checkbox" name="full" value="400" onclick="calculateTotal()"> Full Conference - 400 SEK
-            </label>
-
-            <p id="total-cost">Total Cost: 0 SEK</p>
-
-            <button type="submit">Submit</button>
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
         </form>
     </section>
 
-    <!-- Footer -->
+        <!-- Footer -->
     <footer>
         <div class="main-footer-container">
             <div class="contact-container">
-                <div>
-                    <h3>Contact info</h3>
-                    <p>&copy; 2024 Better Web Conference</p>
-                    <p>Telephone: 012-345-678</p>
-                    <p>Email: info@betterwebconf.com</p>
-                </div>
+                <h3>Contact info</h3>
+                <p>&copy; 2024 Better Web Conference</p>
+                <p>Telephone: 012-345-678</p>
+                <p>Email: info@betterwebconf.com</p>
             </div>
             <div class="socials-container">
-                <img class="fb" src="#"></img>
-                <img class="insta" src="#"></img>
+                <img class="fb" src="img/fb.png"></img>
+                <img class="insta" src="img/insta.png"></img>
+                <img class="twit" src="img/twitter.png"></img>
             </div>
         </div>
     </footer>
