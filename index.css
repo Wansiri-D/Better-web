@@ -42,6 +42,11 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: #e67e22;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: translateY(-10px);
 }
 
 .nav-links {
@@ -188,16 +193,11 @@ h2 {
     border: 5px solid #f77e42; /* Optional: Add a border to make it pop */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for effect */
     margin-bottom: 10px;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
-.speaker-item img:active {
-    animation: bounce 0.5s ease;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+.speaker-item img:hover {
+    transform: scale(1.2);
 }
 
 .speaker-item h3 {
@@ -242,6 +242,18 @@ footer {
     width: 50px;
     height: 50px;
     margin: 1em;
+    /*padding: 10px 20px;
+    font-size: 16px;*/
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    /*border-radius: 5px;*/
+    box-shadow: 0 0 5px #e67e22, 0 0 15px #e67e22, 0 0 30px #e67e22;
+    transition: box-shadow 0.5s ease;
+}
+
+.socials-container img:hover {
+    box-shadow: 0 0 20px #e67e22, 0 0 50px #e67e22, 0 0 100px #e67e22;
 }
 
 @media (max-width:500px){
