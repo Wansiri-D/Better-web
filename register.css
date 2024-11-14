@@ -158,6 +158,16 @@ footer {
     width: 50px;
     height: 50px;
     margin: 1em;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    box-shadow: 0 0 5px #e67e22, 0 0 15px #e67e22, 0 0 30px #e67e22;
+    transition: box-shadow 0.5s ease;
+}
+
+.socials-container img:hover {
+    box-shadow: 0 0 20px #e67e22, 0 0 50px #e67e22, 0 0 100px #e67e22;
 }
 
 @media (max-width:500px){
